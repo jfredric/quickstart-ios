@@ -32,6 +32,12 @@
 
   // Set a white background so that patterns are showcased.
   self.window.backgroundColor = [UIColor whiteColor];
+    
+    // set user properties
+    [FIRAnalytics setUserPropertyString:@"34" forName:@"Age"];
+    [FIRAnalytics setUserPropertyString:@"District 12" forName:@"user_burg"]; // descriptive location
+    [FIRAnalytics setUserPropertyString:@"2" forName:@"user_type"]; // 1 for user, 2 for rep
+    [FIRAnalytics setUserPropertyString:@"0" forName:@"is_voter"]; // 0 for non voter, 1 for voter
 
   return YES;
 }
